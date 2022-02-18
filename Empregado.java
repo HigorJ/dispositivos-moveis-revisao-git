@@ -6,6 +6,8 @@ public class Empregado{
     private double comissao;
     private double bonus;
 
+    
+
     public double calcularSalario () {
         if (tipo == 1){
             return salario;
@@ -17,6 +19,30 @@ public class Empregado{
             return salario + bonus;
         }
         return 0;
+    }
+
+    public double getComissao() {
+        return comissao;
+    }
+
+    public void setComissao(double comissao) {
+        this.comissao = comissao;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
     public String getNome() {
